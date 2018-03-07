@@ -1,22 +1,22 @@
 {% extends "nav.html" %}
 {% block head %}
-    <script src="{{ url_for('static', filename='js/pydelo/host_create.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/pydelo/home_create.js') }}"></script>
 {% endblock %}
 {% block content %}
 <div class="row">
     <ol class="breadcrumb">
-        <li><a href="/hosts">Home</a></li>
+        <li><a href="/homes">Home</a></li>
         <li class="active">Creation</li>
     </ol>
 </div>
 <div class="row">
-    <!--form role="form" action="/host/creation" method="post"-->
+    <!--form role="form" action="/home/creation" method="post"-->
         <div class="row">
             <div class="col-xs-1">
                 <label>name:</label>
             </div>
             <div class="col-xs-5">
-                <input class="form-control" type="text" id="name" placeholder="host name">
+                <input class="form-control" type="text" id="name" placeholder="home name">
             </div>
         </div>
         <div class="row">

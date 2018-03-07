@@ -58,6 +58,7 @@ def rollback_thread(project_id):
     deploys = DeploysService()
     deploy = deploys.first(project_id=project_id, status=3)
     logger.info("deploy thread start: %d" % deploy.id)
+ 
     ssh = RemoteShell(host=deploy.host.ssh_host,
                       port=deploy.host.ssh_port,
                       user=deploy.host.ssh_user,
@@ -121,6 +122,7 @@ def deploy_thread(project_id):
         logger.info("no deploy wait in quene.")
         return
     logger.info("deploy thread start: {}".format(deploy.id))
+    print deploy.host.ssh_host
     ssh = RemoteShell(host=deploy.host.ssh_host,
                       port=deploy.host.ssh_port,
                       user=deploy.host.ssh_user,

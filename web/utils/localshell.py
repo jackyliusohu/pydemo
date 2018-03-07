@@ -12,6 +12,7 @@ class LocalShell(object):
     @staticmethod
     def check_output(*args, **kargs):
         cmd = kargs.get("args") or args[0]
+        print cmd 
         logger.debug("local shell: %s" % cmd)
         process = Popen(*args, stdout=PIPE, stderr=PIPE, **kargs)
         stdout, stderr = process.communicate()

@@ -23,4 +23,4 @@ db = SQLAlchemy(app)
 db_session = db.session
 
 
-from .controller import api, webhooks, login, deploys, project, host, users
+from .controller import api, webhooks, login, deploys, project, host, users, home

@@ -21,10 +21,10 @@ Installation
 ------------
 ```
 apt-get install rsync sshpass
-git clone git@github.com:meanstrong/pydelo.git
-cd pydelo
+git clone git@github.com:jyackyliusohu/pydemo.git
+cd pydemo
 pip install -r pip_requirements.txt # 建议使用virtualenv来部署
-mysql -h localhost -u root -p pydelo < db-schema/db-schema.sql  # create database and tables
+mysql -h localhost -u root -p pydemo < db-schema/db-schema.sql  # create database and tables
 vi web/config.py # set up module config such as mysql connector
 python init.py   # 添加默认用户、项目数据
 
@@ -34,16 +34,16 @@ python manage.py # start flask web app
 Usage
 -----
 #### 1.Add project
-![image](https://github.com/meanstrong/pydelo/raw/master/docs/create_project.png)
+![image](https://github.com/jyackyliusohu/pydemo/raw/master/docs/create_project.png)
 
 #### 2.New deploy
-![image](https://github.com/meanstrong/pydelo/raw/master/docs/create_deploy.png)
+![image](https://github.com/jyackyliusohu/pydemo/raw/master/docs/create_deploy.png)
 
 #### 3.Deploy progress
-![image](https://github.com/meanstrong/pydelo/raw/master/docs/deploy_progress.png)
+![image](https://github.com/jyackyliusohu/pydemo/raw/master/docs/deploy_progress.png)
 
 #### 4.Deploys
-![image](https://github.com/meanstrong/pydelo/raw/master/docs/deploys.png)
+![image](https://github.com/jyackyliusohu/pydemo/raw/master/docs/deploys.png)
 
 Discussing
 ----------
