@@ -47,7 +47,6 @@ Usage
 
 Discussing
 ----------
-- email: pmq2008@gmail.com
 
 
 Todo
